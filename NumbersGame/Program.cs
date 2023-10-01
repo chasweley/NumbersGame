@@ -20,13 +20,13 @@ namespace NumbersGame
                     Console.WriteLine("Wohoo! Du klarade det!");
                     break; //If method true, break loop
                 }
-                else if (i < 4 && guess < number) //If iteration lower than four and guess lower than number
+                else if (guess < number) //If guess lower than number
                 {
                     Console.WriteLine("Tyvärr du gissade för lågt!"); //Print that guess is too low 
                 }
-                else if (i < 4 && guess > number) //If iteration lower than four and guess higher than number
+                else if (guess > number) //If guess higher than number
                 {
-                    Console.WriteLine("Tyvärr du gissade för högt!"); //Print that the guess is to high 
+                    Console.WriteLine("Tyvärr du gissade för högt!"); //Print that the guess is too high 
                 }
                 if (i == 4 && guess != number) //If interation is equal to four (last iteration allowed) and guess is not equal to number
                 {
