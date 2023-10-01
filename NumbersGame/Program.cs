@@ -28,7 +28,7 @@ namespace NumbersGame
                 {
                     Console.WriteLine("Tyvärr du gissade för högt!"); //Print that the guess is too high 
                 }
-                if (i == 4 && guess != number) //If interation is equal to four (last iteration allowed) and guess is not equal to number
+                if (i == 4 && !CheckIfEqual(guess, number)) //If interation is equal to four (last iteration allowed) and guess is not equal to number
                 {
                     Console.WriteLine("Tyvärr du lyckades inte gissa talet på fem försök!"); //Print that guess is incorrect and no more tries
                 }
